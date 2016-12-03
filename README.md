@@ -1,2 +1,2 @@
 # perl-on-perl-on-perl
-Perl practice, because why not.
+Is it too late to become a monk?
