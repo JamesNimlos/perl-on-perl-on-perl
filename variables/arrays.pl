@@ -12,5 +12,12 @@ say "================================";
 say "Loops...\n";
 
 for my $value (@months) {
-  say "index, ", (first_index {$_ eq $value} @months), ", is assigned to $value"; # functional programming seems fairly native
+  my $index = (first_index {$_ eq $value} @months); # functional programming seems fairly native
+  say "index, $index, is assigned to $value";
+  say "Interpreted in a string, references use \$ instead of \@: $months[$index]";
 }
+
+my @foo = ("bar");
+my $foo = "works?";
+say "\nWhich value is printed? $foo[0]"; #array
+say "But does it know when I want the string $foo"; # pretty neat.
